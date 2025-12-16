@@ -5,7 +5,9 @@
 
 ## 📌 Project Overview
 
-This project builds a **personalized interaction modeling pipeline** over the **MPChat (ACL 2023)** dataset by constructing a **User Interaction Graph (UIG)** centered on a target speaker (referred to as *Alice*).
+This project builds a **personalized interaction modeling pipeline**. 
+
+1) Dialogue Dataset utilized is **MPChat (ACL 2023)** dataset by constructing a **User Interaction Graph (UIG)** centered on a target speaker (referred to as *Alice*).
 
 The core goal is to infer **how Alice reacts to other users over time**, using a **hybrid sentiment inference mechanism** that combines:
 
