@@ -115,15 +115,18 @@ For the mixed multi-task encoder in `pertide-final.ipynb`, prepare the CSV and e
 LLM baselines
 `deepseek_personalization_baselines.ipynb` and `llm_baselines (1).ipynb` contain the prompted LLM baselines used in the research workflow. They load models through Hugging Face Transformers with `device_map="auto"` and half-precision weights where configured. The 32B-model experiments are intended for appropriately provisioned GPU environments.
 The baseline notebooks also use preprocessed CSVs. Update their dataset paths before execution.
+
 Reproducibility notes
+
 The main training notebooks set the random seed to 42 unless explicitly overridden.
 CUDA is used automatically when available; several notebooks include CPU fallbacks, although large-model baselines are not practical CPU workloads.
 Checkpoint/resume logic is included in the main PerTIDE notebooks.
 No trained PerTIDE checkpoint is bundled in this repository; checkpoints are produced by the training notebooks.
-Several notebooks retain development-machine absolute paths (`/teamspace/...` or local Windows paths). These are configuration values only and must be replaced with local paths before execution.
-The notebook code is the authoritative source for expected preprocessed columns and experiment-specific hyperparameters.
+
 Paper
+
 The accompanying paper is:
+
 > Parthiv Chatterjee, Kashish Kanjaria, Vashisth Purani, Sourish Dasgupta, and Tanmoy Chakraborty. **Action-On-Item Preference Flow: A Shared Event Schema for Predictive and Generative Personalization.** NeurIPS 2026.
 Paper: arXiv:2610.01375
 If you use this code or build on PerTIDE, please cite:
